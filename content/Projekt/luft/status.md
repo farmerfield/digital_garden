@@ -1,0 +1,11 @@
+---
+title: status
+---
+2026-03-10
+Jag har byggt tre sensorer baserade på arduino och en PMS 5003T partikelsensor. Sensorerna är installerade i snickeriet och skickar data till en raspberri pi.  Pi-datorn tar emot data via mqtt och gör bearbetningar i R.
+
+Överföring av data sker med hjälp av ssh via netbird till min dator hemma.  Hemma har jag byggt en enkel visualisering i Quarto och publicerat den på ett repo i Github med hjälp av Github Actions och ChatGPT.  
+
+Nästa steg i närtid är att automatiskt pusha data till github från Pi-datorn.   Hur mycket ska jag bygga på quartosidan jämfört med att testa bygga en shiny-applikation.  Jag behöver bestämma mig vilka grafer som ska ingå i quarto och om jag ska ta med förbyggda dataframes och redovisa dem. Ta med alla noder och sammanställa data dagligen och veckovis kan fungera.
+
+Fas två av tre i projektet blir att bygga en apparat som mät ljudspektra när olika maskiner körs. Fas 3 är att bygga luftrenare och prova att styra den mot bakgrund av partikelhalt.
